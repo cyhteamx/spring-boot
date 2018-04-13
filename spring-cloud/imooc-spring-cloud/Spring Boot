@@ -1,0 +1,2 @@
+Spring Boot
+1.redis启动时使用的是默认配置，即port＝6379，则无需对项目的配置进行修改,及项目不做任何配置，如项目micro-weather-redis
