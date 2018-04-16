@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 5.7.17, for macos10.12 (x86_64)
+--
+-- Host: 127.0.0.1    Database: sell
+-- ------------------------------------------------------
+-- Server version	5.7.16
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `product_category`
+--
+
+DROP TABLE IF EXISTS `product_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `product_category` (
+  `category_id` int(11) NOT NULL AUTO_INCREMENT,
+  `category_name` varchar(64) NOT NULL COMMENT '类目名字',
+  `category_type` int(11) NOT NULL COMMENT '类目编号',
+  `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '修改时间',
+  PRIMARY KEY (`category_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_category`
+--
+
+LOCK TABLES `product_category` WRITE;
+/*!40000 ALTER TABLE `product_category` DISABLE KEYS */;
+INSERT INTO `product_category` VALUES (1,'热销榜',2,'2018-01-27 14:46:17','2018-01-27 14:46:17'),(3,'女生最爱',3,'2018-01-28 08:16:53','2018-01-28 08:16:53'),(5,'男生最爱',4,'2018-01-28 09:01:24','2018-01-28 09:01:24'),(6,'男生赚(ˇˍˇ) 想～',10,'2018-01-28 09:44:15','2018-01-28 09:44:15'),(7,'师兄最不爱',101,'2018-02-06 13:33:58','2018-02-06 13:33:58'),(8,'女生最爱',3,'2018-04-13 15:52:10','2018-04-13 15:52:10'),(9,'男生最爱',4,'2018-04-13 15:52:11','2018-04-13 15:52:11'),(11,'男生赚(ˇˍˇ) 想～',10,'2018-04-13 15:52:14','2018-04-13 15:52:14'),(12,'女生最爱',3,'2018-04-13 15:53:37','2018-04-13 15:53:37'),(13,'男生最爱',4,'2018-04-13 15:53:37','2018-04-13 15:53:37'),(15,'男生赚(ˇˍˇ) 想～',10,'2018-04-13 15:53:38','2018-04-13 15:53:38'),(16,'女生最爱',3,'2018-04-13 15:58:17','2018-04-13 15:58:17'),(17,'男生最爱',4,'2018-04-13 15:58:17','2018-04-13 15:58:17'),(19,'男生赚(ˇˍˇ) 想～',10,'2018-04-13 15:58:19','2018-04-13 15:58:19'),(20,'女生最爱',3,'2018-04-13 16:02:02','2018-04-13 16:02:02'),(21,'男生最爱',4,'2018-04-13 16:02:02','2018-04-13 16:02:02'),(23,'男生赚(ˇˍˇ) 想～',10,'2018-04-13 16:02:05','2018-04-13 16:02:05');
+/*!40000 ALTER TABLE `product_category` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-04-16 12:41:39

@@ -38,7 +38,7 @@ wechat:
 projectUrl:
   wechatMpAuthorize: http://cyh.nat300.top
   wechatOpenAuthorize: http://cyh.nat300.top
-  sell: http://cyh.nat300.top
+  sell: http://localhost:8080
 logging:
   level:
     com.imooc.dataobject.mapper: trace
