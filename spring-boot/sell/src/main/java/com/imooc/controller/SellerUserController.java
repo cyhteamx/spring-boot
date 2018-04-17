@@ -35,7 +35,8 @@ public class SellerUserController {
     @Autowired
     private ProjectUrlConfig projectUrlConfig;
 
-    //http://cyh.nat300.top/sell/seller/login?openid=abc模仿登录
+    //http://cyh.nat300.top/sell/seller/login?openid=abc  模仿登录
+    //http://192.168.0.102:8080/sell/seller/login?openid=abc  模仿登录
     @GetMapping("/login")
     public ModelAndView login(@RequestParam("openid") String openid,
                               HttpServletResponse response,
